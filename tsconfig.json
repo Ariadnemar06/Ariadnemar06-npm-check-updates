@@ -1,0 +1,34 @@
+{
+  "include": [
+    "src",
+    "test"
+  ],
+  "exclude": [
+    "test/deep",
+    "test/doctor"
+  ],
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "lib": ["es2019"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "paths": {
+      "cint": ["./src/types/cint"],
+      "libnpmconfig": ["./src/types/libnpmconfig"],
+      "spawn-please": ["./src/types/spawn-please"]
+    },
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2019"
+  }
+}
